@@ -17,11 +17,6 @@
 	
 	<style>
 	
-	html 
-	{ 
-		
-	}
-	
 	body 
 	{
 	  height: 100%;
@@ -102,36 +97,33 @@
     #Skills 	{padding-top:50px;height:100vh;}
 	#Experience {padding-top:50px;height:100vh;}
     #Project-1 	{padding-top:50px;height:100vh;}
+    #Project-2 	{padding-top:50px;height:100vh;}
 	</style>
 	
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="typeWriter()">
-
-
-
 	<div id="mySidenav" class="sidenav">
-	  <a align="right" style="padding-right:15px;" href="#" onclick="closeNav()">&times;</a>
-	  <a href="#">About</a>
-	  <a href="#">Education</a>
-	  <a href="#">Skills</a>
-	  <a href="#">Experience</a>
-	  <a href="#">Projects</a>
-	  <img src="Images/Professional Photo.jpg" alt="Avatar" style="border-radius:50%;">
+		<a align="right" style="padding-right:15px;" href="#" onclick="closeNav()">&times;</a>
+<!-- 	  <a href="#">About</a> -->
+		
+		<div style="width: 100%; height: 234px;position: absolute;">
+			<img src="Images/Professional Round Image.gif" alt="Avatar" style="border-radius:unset;width: 100%;height: auto;">
+		</div>
+		<a href=""></a>
 	</div>
 
 	
 	<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#d1d2d5;">
 	  <div class="container-fluid" style="padding-top: 5px;padding-bottom: 5px;">
-		<div>
 		  <div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav" style="padding-top:0px">
 			  <li><span style="font-size:30px;cursor:pointer;padding-right:18px" onclick="openNav()"><i class="fa fa-bars" style="padding:9px 0px" aria-hidden="true"></i></span></li>
-			  <li><a href="#About">About</a></li>
-			  <li><a href="#Education">Education</a></li>
-			  <li><a href="#Skills">Skills</a></li>
-			  <li><a href="#Experience">Experience</a></li>
-			  <li><a href="#Project">Project</a></li>
+			  <li><a href="#About">		About		</a></li>
+			  <li><a href="#Education">	Education	</a></li>
+			  <li><a href="#Skills">	Skills		</a></li>
+			  <li><a href="#Experience">Experience	</a></li>
+			  <li><a href="#Project">	Project		</a></li>
 			  
 			  <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
 				<ul class="dropdown-menu">
@@ -141,7 +133,6 @@
 			  </li> -->
 			</ul>
 		  </div>
-		</div>
 	  </div>
 	</nav>
 	
@@ -245,16 +236,18 @@
                       </ul>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-lg-9">
+                <div>
                         <div class="subheading mb-3">Web Programming Languages</div>
                         <ul class="list-inline list-icons" style="font-size:50px">
+
                           <li class="list-inline-item">
-                            <i class="devicon-html5-plain-wordmark colored"  title="HTML5"></i>
+                            <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
                           </li>
+
                           <li class="list-inline-item">
                             <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
                           </li>
+
                           <li class="list-inline-item">
 							<i class="devicon-php-plain colored" title="PhP"></i>
                           </li>
@@ -265,19 +258,17 @@
                             <i class="devicon-jquery-plain colored" title="jQuery"></i>
                           </li>
                           <li class="list-inline-item">
-                            <i i="" class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+                            <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
                           </li>
                         </ul>
                     </div>
-</div>
-
-        </div>
+			</div>
 			
 			</div>
 		</div>
 	</div>
 	<div id="Experience" class="container background-image" style="margin-top: 49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
-	  <div style="padding:0px">
+		<div style="padding:0px">
 			<h2 style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px" align="left">Experience</h2>
 			<div style="margin-bottom:1.5%"></div>
 			<div id="demo" style="margin-right:15%;margin-top:5%;font-size:25px;height:40%;text-align:justify;">
@@ -302,13 +293,7 @@
 						<li>Used PostMan for testing of various endpoints in the created RESTful service.</li>
 					</ul>
 				</li>
-				<li>Desktop Application
-					<ul>
-						<li>Developed Desktop Application in Java using Swing/AWT</li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
+				<li>Developed Desktop Application in Java using Swing/AWT</li>
 			</ul>
 			</div>
 			</div>
@@ -316,7 +301,7 @@
 	</div>
 	
 	<div id="Project" class="container background-image" style="margin-top: 49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
-	  <div style="padding:0px">
+		<div style="padding:0px">
 			<h2 style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px" align="left">Project</h2>
 			<div style="margin-bottom:1.5%"></div>
 			<div id="demo" style="margin-right:15%;margin-top:5%;font-size:20px;height:40%;text-align:justify;">
@@ -340,11 +325,8 @@
 			</div>
 		</div>
 	</div>
+</div>
 	
-	<footer></footer>
-	
-	
-
 	<script>
 	function openNav() {
 	  document.getElementById("mySidenav").style.width = "250px";
