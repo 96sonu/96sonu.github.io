@@ -1,222 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
+	<head>
 
-	<title>Paril Doshi</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="CSS/devicons.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	
-	<style>
-	
-	body 
-	{
-		height: 100%;
-		margin:0px;
-		background-image: url(Images/blank-page-background1.jpg);
-		background-size: cover;
-		background-attachment: fixed;
-		font-family: "Lato", sans-serif;
-	}
+		<title>Paril Doshi</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
+			/>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link
+			href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+			rel="stylesheet">
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<link href="CSS/devicons.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="CSS/style.css">
+	</head>
 
-	.background
-	{
-		height: 100%;
-	}
-	
-	.sidenav {
-	  height: 100%;
-	  width: 0;
-	  position: fixed;
-	  z-index: 1;
-	  top: 0;
-	  left: 0;
-	  background-color: #111;
-	  overflow-x: hidden;
-	  transition: 0.5s;
-	  padding-top: 60px;
-	}
-
-	.sidenav a {
-	  padding: 8px 8px 8px 32px;
-	  text-decoration: none;
-	  font-size: 25px;
-	  color: #818181;
-	  display: block;
-	  transition: 0.3s;
-	}
-
-	.sidenav a:hover {
-	  color: #f1f1f1;
-	}
-
-	
-	
-	.sidenav .closebtn {
-	  position: absolute;
-	  top: 0;
-	  right: 25px;
-	  font-size: 36px;
-	  margin-left: 50px;
-	}
-
-	@media screen and (max-height: 450px) {
-	  .sidenav {padding-top: 15px;}
-	  .sidenav a {font-size: 18px;}
-	}	
-	
-	img.background
-	{
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-	}
-	
-	.background-image
-	{
-		height: 100%; 
-		background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: contain;
-	}
-	
-	@media screen and (max-width: 1000px) 
-	{
-		.display-mobile
-		{
-			display:none;
-		}
-		.mobile-menu
-		{
-			display:block !important;
-			padding-top:5%;
-			padding-right:5%;
-			font-size:10vw	;
-		}
-		.mobile-font
-		{
-			font-size:10vw !important;
-		}
-	}
-	
-	#About 		{padding-top:50px;height:100vh;}
-    #Education 	{padding-top:50px;height:100vh;}
-    #Skills 	{padding-top:50px;height:100vh;}
-	#Experience {padding-top:50px;height:100vh;}
-    #Project-1 	{padding-top:50px;height:100vh;}
-    #Project-2 	{padding-top:50px;height:100vh;}
-	
-	
-	
-	.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 1000px) {
-  .topnav a{display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    display: block;
-    text-align: left;
-  }
-	
-	</style>
-	
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="typeWriter()">
-	<div id="mySidenav" class="sidenav" style="width:0px;">
-		<a align="right" style="padding-right:15px;" href="#" onclick="openNav()">&times;</a>
-		
-		<div style=" width: 100%;">
-			<img src="Images/Professional Round Image.gif" alt="Paril Doshi" style="border-radius:unset;width: 100%;height: auto;">
-		</div>
-		
-		<div class="row" style="width:100%;padding-left:5%;margin-right: 0px;margin-left: 0px;">
-		
-			<div class="col-lg-7" style="padding-right:0px;padding-left: 0px;">
-			
-				<div style="color:white;padding:0%;">
-					DOB:
-				</div>
-				<div style="color:white;padding:0%;">
-					Nationality:
-				</div>
-				<div style="color:white;padding:0%;">
-					Visa Status:
-				</div>
-				<div style="color:white;padding:0%;">
-					Expected Graduation:
-				</div>
-				
-				</div>
-			<div class="col-lg-5" style="padding-right:0px;padding-left:0px">
-			
-				<div style="color:white;padding:0%;">
-					03 April, 1996
-				</div>
-				<div style="color:white;padding:0%;">
-					Indian
-				</div>
-				<div style="color:white;padding:0%;">
-					F1 Visa
-				</div>
-				<div style="color:white;padding:0%;">
-					May 2020
-				</div>
-				
+	<body data-spy="scroll" data-target=".navbar" data-offset="50"
+		onload="typeWriter()">
+		<div id="mySidenav" class="sidenav" style="width:0px;">
+			<a style="padding-right:15px;" href="#" onclick="openNav()">&times;</a>
+			<div style="width: 100%;">
+				<img src="Images/Professional_Round_Image.gif" alt="Paril Doshi"
+					style="border-radius:unset;width: 100%;height: auto;">
 			</div>
-			
-		</div>
-			
+
+			<div class="row" style="width:100%;padding-left:5%;margin-right:
+				0px;margin-left: 0px;">
+
+				<div class="col-lg-7" style="padding-right:0px;padding-left: 0px;">
+
+					<div style="color:white;padding:0%;">
+						DOB:
+					</div>
+					<div style="color:white;padding:0%;">
+						Nationality:
+					</div>
+					<div style="color:white;padding:0%;">
+						Visa Status:
+					</div>
+					<div style="color:white;padding:0%;">
+						Expected Graduation:
+					</div>
+
+				</div>
+				<div class="col-lg-5" style="padding-right:0px;padding-left:0px">
+
+					<div style="color:white;padding:0%;">
+						03 April, 1996
+					</div>
+					<div style="color:white;padding:0%;">
+						Indian
+					</div>
+					<div style="color:white;padding:0%;">
+						F1 Visa
+					</div>
+					<div style="color:white;padding:0%;">
+						May 2020
+					</div>
+
+				</div>
+
+			</div>
+
 			<div style="color:white;padding-top:10%">
 				Future Coursework(Spring Semester)
 				<ul>
@@ -225,285 +82,323 @@
 					<li>Design and Analysis of Algorithms</li>
 				</ul>
 			</div>
-		
+
 		</div>
-		
-	</div>
-	
-	<nav class="navbar navbar-default navbar-fixed-top display-mobile" style="background-color:#d1d2d5;">
-	  <div class="container-fluid" style="padding-top: 5px;padding-bottom: 5px;">
-		  <div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav" style="padding-top:0px;width:100%">
-			  <li><span style="font-size:30px;cursor:pointer;padding-right:18px" onclick="openNav()"><i class="fa fa-bars" style="padding:9px 0px" aria-hidden="true"></i></span></li>
-			  <li><a href="#About">		About		</a></li>
-			  <li><a href="#Education">	Education	</a></li>
-			  <li><a href="#Skills">	Skills		</a></li>
-			  <li><a href="#Experience">Experience	</a></li>
-			  <li><a href="#Project">	Project		</a></li>
-			</ul>
-		  </div>
-	  </div>
-	</nav>
-	
-	<div class="mobile-menu" style="float:right;display:none;position:relative;">
-	
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()" style="float:inherit;">
-			<i class="fa fa-bars"></i>
-		</a>
-		
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+			style="background-color:#d1d2d5;">
+			<div class="container-fluid" style="padding-top: 5px;padding-bottom: 5px;">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style="padding-top:0px;width:100%">
+						<li class="nav-item"><span
+								style="font-size:30px;cursor:pointer;padding-right:18px"
+								onclick="openNav()"><i class="fa fa-bars" style="padding:9px 0px"
+									aria-hidden="true"></i></span></li>
+						<li class="nav-item"><a class="nav-link" href="#About"> About </a></li>
+						<li class="nav-item"><a class="nav-link" href="#Education"> Education </a></li>
+						<li class="nav-item"><a class="nav-link" href="#Skills"> Skills </a></li>
+						<li class="nav-item"><a class="nav-link" href="#Experience">Experience
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="#Project"> Project </a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="mobile-menu" style="float:right;display:none;position:relative;">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"
+				style="float:inherit;">
+				<i class="fa fa-bars"></i>
+			</a>
+
 			<div class="topnav mobileNav" id="myTopnav" style="position:fixed">
-				<p><a href="#About">		About		</a>
-				<p><a href="#Education">	Education	</a>
-				<p><a href="#Skills">	Skills			</a>
-				<p><a href="#Experience">Experience	</a>
-				<p><a href="#Project">	Project			</a>
-			</div>
-	
-	</div>
-	
-	
-	
-	
-	
-	<div style="padding:50px;" style="position:fixed;">
-	
-	<div id="About" class="container background-image" style="margin-bottom: 0px;height: 630px;padding-left:11%;">
-		<div style="padding:0px">
-			<h2 class="mobile-font" style="font-family:Arvo,serif!important;font-size:3vw;margin-bottom:0px" align="left">Paril Doshi</h2>
-			<div style="margin-bottom:1.5%">7220 McCallum Blvd. Dallas, Texas, USA - psd170000@utdallas.edu</div>
-			<div id="demo" style="margin-right:15%;margin-top:5%;font-size:25px;height:40%;text-align:justify;"></div>
-			<div>
-				<ul class="list-inline list-social-icons mb-0">
-					<li class="list-inline-item">
-					  <a href="https://www.linkedin.com/in/doshiparil96/" target="_blank">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x"></i>
-						  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-					  </a>
-					</li>
-					<li class="list-inline-item">
-					  <a href="https://github.com/96sonu" target="_blank">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x"></i>
-						  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-						</span>
-					  </a>
-					</li>
-			    </ul>
-			</div>
-		</div>
-	</div>
-	<div id="Education" class="container background-image" style="margin-top: 49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
-	  <div style="padding:0px">
-			<h2 style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px" align="left">Education</h2>
-			<div style="margin-bottom:1.5%"></div>
-			<div style="margin-right:15%;margin-top:5%;font-size:25px;height:40%">
-			
-			<div class="row">
-			
-				<div class="col-sm-7">			
-					<h3 style="font-weight:bold">The University of Texas at Dallas</h3><p>
-					<h4>Masters</h4><p>
-					<h5>Computer Science - Specialization: DataScience</h5><p>
-					<h5>GPA: 3.44/4.0</h5>
-				</div>
-				<div class="col-sm-5" align="right" style="margin-top:15px">
-					<h5>August 2018 - Present</h5><p>
-				</div>
-			
-			</div>
-			
-	
-			<div class="row">
-				<div class="col-sm-7">
-					<h3 style="font-weight:bold">Gujarat Technological University</h3><p>
-					<h4>Bachelors</h4>	
-					<h5>Computer Engineering</h5>
-					<h5>GPA: 3.4/4.0</h5>
-				</div>						
-				<div class="col-sm-5" align="right" style="margin-top:15px">
-					<h5>July 2018 - May 2017</h5>
-				</div>
-			
-			</div>
-			
-			
-			
-			</div>
-		</div>
-	</div>
-	<div id="Skills" class="container background-image" style="margin-top: 49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
-	  <div style="padding:0px">
-			<h2 style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px" align="left">Skills</h2>
-			<div style="margin-bottom:1.5%"></div>
-			<div id="demo" style="margin-right:15%;margin-top:5%;font-size:25px;height:40%">
-			
-			<div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                    <div class="subheading mb-3">Programming Languages</div>
-                    <ul class="list-inline list-icons" style="font-size:50px">
+				<p><a href="#About"> About </a>
+					<p><a href="#Education"> Education </a>
+						<p><a href="#Skills"> Skills </a>
+							<p><a href="#Experience">Experience </a>
+								<p><a href="#Project"> Project </a>
+								</div>
 
-                      <li class="list-inline-item">
-                        <i class="devicon-java-plain colored" title="Java"></i>
-                      </li>
-                      <li class="list-inline-item">
-						<i class="devicon-python-plain colored" title="Python"></i>
-					  </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                      <div class="subheading mb-3">Database</div>
-                      <ul class="list-inline list-icons" style="font-size:50px">
+							</div>
 
-                        <li class="list-inline-item">
-                        <i class="devicon-mysql-plain-wordmark colored" title="MySQL"></i>
-                        </li>
-                        <li class="list-inline-item">
-                        <i class="devicon-oracle-original colored" title="Oracle"></i>
-                        </li>
-                      </ul>
-                  </div>
-                </div>
-                <div>
-                        <div class="subheading mb-3">Web Programming Languages</div>
-                        <ul class="list-inline list-icons" style="font-size:50px">
+							<div style="padding:50px; position:fixed;">
 
-                          <li class="list-inline-item">
-                            <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
-                          </li>
+								<div id="About" class="container background-image" style="margin-bottom:
+									0px;height: 630px;padding-left:11%;">
+									<div style="padding:0px">
+										<h2 class="mobile-font"
+											style="font-family:Arvo,serif!important;font-size:3vw;margin-bottom:0px">Paril
+											Doshi</h2>
+										<div style="margin-bottom:1.5%">7220 McCallum Blvd. Dallas, Texas, USA
+											- psd170000@utdallas.edu</div>
+										<div id="demo"
+											style="margin-right:15%;margin-top:5%;font-size:25px;height:40%;text-align:justify;"></div>
+										<div>
+											<ul class="list-inline list-social-icons mb-0">
+												<li class="list-inline-item">
+													<a href="https://www.linkedin.com/in/doshiparil96/"
+														target="_blank">
+														<span class="fa-stack fa-lg">
+															<i class="fa fa-circle fa-stack-2x"></i>
+															<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+														</span>
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a href="https://github.com/96sonu" target="_blank">
+														<span class="fa-stack fa-lg">
+															<i class="fa fa-circle fa-stack-2x"></i>
+															<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="Education" class="container background-image"
+									style="margin-top:
+									49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
+									<div style="padding:0px">
+										<h2
+											style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px">Education</h2>
+										<div style="margin-bottom:1.5%"></div>
+										<div style="margin-right:15%;margin-top:5%;font-size:25px;height:40%">
+											<div class="row">
 
-                          <li class="list-inline-item">
-                            <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
-                          </li>
+												<div class="col-sm-7">
+													<h3 style="font-weight:bold">The University of Texas at Dallas</h3><p>
+														<h4>Masters</h4><p>
+															<h5>Computer Science - Specialization: DataScience</h5><p>
+																<h5>GPA: 3.44/4.0</h5>
+															</div>
+															<div class="col-sm-5" style="margin-top:15px">
+																<h5>August 2018 - Present</h5><p>
+																</div>
 
-                          <li class="list-inline-item">
-							<i class="devicon-php-plain colored" title="PhP"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="devicon-jquery-plain colored" title="jQuery"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
-                          </li>
-                        </ul>
-                    </div>
-			</div>
-			
-			</div>
-		</div>
-	</div>
-	<div id="Experience" class="container background-image" style="margin-top: 49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
-		<div style="padding:0px">
-			<h2 style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px" align="left">Experience</h2>
-			<div style="margin-bottom:1.5%"></div>
-			<div id="demo" style="margin-right:15%;margin-top:5%;font-size:25px;height:40%;text-align:justify;">
-			
-			<div class="row">
-				<div class="col-lg-6">Software Developer Intern</div>
-				<div class="col-lg-6" align="right">CSIT Park, Gandhinagar</div>
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-lg-6" style="font-size:15px">Desktop Application, Web Application, Web Services</div>
-				<div class="col-lg-6" style="font-size:15px" align="right">September 17 to June 18</div>
-			
-			</div>
-			<div style="font-size:20px">
-			<ul>
-				<li>Web Services
-					<ul>
-						<li>Developed Web Services in PHP for Mobile Application in Visual Code.</li>
-						<li>Used FileZilla Software to manage the file system and upload the developed application on Digital Ocean Server.</li>
-						<li>Used PostMan for testing of various endpoints in the created RESTful service.</li>
-					</ul>
-				</li>
-				<li>Developed Desktop Application in Java using Swing/AWT</li>
-			</ul>
-			</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="Project" class="container background-image" style="margin-top: 49px;margin-bottom: 0px;height: 630px;padding-left:11%;">
-		<div style="padding:0px">
-			<h2 style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px" align="left">Project</h2>
-			<div style="margin-bottom:1.5%"></div>
-			<div id="demo" style="margin-right:15%;margin-top:5%;font-size:20px;height:40%;text-align:justify;">
-			<ul>
-				<li>Warehouse management system <span class="pull-right">Jan 17 – April 17</span>
-					<ul style="font-size:80%">
-						<li>The project has four modules: Customer, Warehouse Manager, Inventory Manager and Admin.</li>
-						<li>The main aim was to efficiently manage different types of space for different time periods.</li>
-						<li>The space management included numbering the space blocks and assigning contiguous blocks for one customer.</li>
-						<li>Giving address to the goods for easily retrieving them and arranging on different height levels as per weight.</li>
-					</ul>
-				</li>
-				<li>
-					<div>Hand Written Digit Recognition
-						<span class="pull-right"><a href="https://github.com/96sonu/Digit-Recognition">(GitHub Link)</a></span>
-					</div>
-					<ul style="font-size:80%">
-						<li>A project for recognition of hand written digits.</li>
-						<li>The dataset used was of MNIST type from Kaggle Competition. SVM, K-Nearest Neighbor and CNN were used for this project.</li>
-						<li>The competition had unlabeled data for which the output needs to be predicted. Submitted the output on Kaggle and got accuracy of 0.99 on unlabeled data.</li>
-					</ul>
-				</li>
-				<li>Image Processing and Text Classification
-					<ul style="font-size:80%">
-						<li>A project for categorization of news headlines from news channel videos. In this project a news clip is broken in frames using OpenCV and the news lines are read from these frames using Tesseract-OCR.</li>
-						<li>This news lines are classified using BBC News Dataset in five labels using Random Forest Classifier.</li>
-					</ul>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</div>
-</div>
-	
-	<script>
-	function openNav() 
-	{
-		if(document.getElementById("mySidenav").style.width == "0px")
+															</div>
+
+
+															<div class="row">
+																<div class="col-sm-7">
+																	<h3 style="font-weight:bold">Gujarat Technological University</h3><p>
+																		<h4>Bachelors</h4>
+																		<h5>Computer Engineering</h5>
+																		<h5>GPA: 3.4/4.0</h5>
+																	</div>
+																	<div class="col-sm-5" style="margin-top:15px">
+																		<h5>July 2018 - May 2017</h5>
+																	</div>
+
+																</div>
+
+
+
+															</div>
+														</div>
+													</div>
+													<div id="Skills" class="container background-image"
+														style="margin-top: 49px;margin-bottom: 0px;height:
+														630px;padding-left:11%;">
+														<div style="padding:0px">
+															<h2
+																style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px">Skills</h2>
+															<div style="margin-bottom:1.5%"></div>
+															<div
+																style="margin-right:15%;margin-top:5%;font-size:25px;height:40%">
+																<div class="container">
+																	<div class="row">
+																		<div class="col-lg-6">
+																			<div class="subheading mb-3">Programming Languages</div>
+																			<ul class="list-inline list-icons" style="font-size:50px">
+																				<li class="list-inline-item">
+																					<i class="devicon-java-plain colored" title="Java"></i>
+																				</li>
+																				<li class="list-inline-item">
+																					<i class="devicon-python-plain colored" title="Python"></i>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="col-lg-6">
+																			<div class="subheading mb-3">Database</div>
+																			<ul class="list-inline list-icons" style="font-size:50px">
+																				<li class="list-inline-item">
+																					<i class="devicon-mysql-plain-wordmark colored"
+																						title="MySQL"></i>
+																				</li>
+																				<li class="list-inline-item">
+																					<i class="devicon-oracle-original colored" title="Oracle"></i>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div>
+																		<div class="subheading mb-3">Web Programming Languages</div>
+																		<ul class="list-inline list-icons" style="font-size:50px">
+
+																			<li class="list-inline-item">
+																				<i class="devicon-html5-plain-wordmark colored"
+																					title="HTML5"></i>
+																			</li>
+
+																			<li class="list-inline-item">
+																				<i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
+																			</li>
+
+																			<li class="list-inline-item">
+																				<i class="devicon-php-plain colored" title="PhP"></i>
+																			</li>
+																			<li class="list-inline-item">
+																				<i class="devicon-javascript-plain colored"
+																					title="JavaScript"></i>
+																			</li>
+																			<li class="list-inline-item">
+																				<i class="devicon-jquery-plain colored" title="jQuery"></i>
+																			</li>
+																			<li class="list-inline-item">
+																				<i class="devicon-bootstrap-plain colored"
+																					title="Bootstrap"></i>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+													<div id="Experience" class="container background-image"
+														style="margin-top: 49px;margin-bottom: 0px;height:
+														630px;padding-left:11%;">
+														<div style="padding:0px">
+															<h2
+																style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px">Experience</h2>
+															<div style="margin-bottom:1.5%"></div>
+															<div
+																style="margin-right:15%;margin-top:5%;font-size:25px;height:40%;text-align:justify;">
+																<div class="row">
+																	<div class="col-lg-6">Software Developer Intern</div>
+																	<div class="col-lg-6">CSIT Park, Gandhinagar</div>
+																</div>
+
+																<div class="row">
+
+																	<div class="col-lg-6" style="font-size:15px">Desktop
+																		Application, Web Application, Web Services</div>
+																	<div class="col-lg-6" style="font-size:15px">September
+																		17 to June 18</div>
+
+																</div>
+																<div style="font-size:20px">
+																	<ul>
+																		<li>Web Services
+																			<ul>
+																				<li>Developed Web Services in PHP for Mobile Application in
+																					Visual Code.</li>
+																				<li>Used FileZilla Software to manage the file system and
+																					upload the developed application on Digital Ocean Server.</li>
+																				<li>Used PostMan for testing of various endpoints in the
+																					created RESTful service.</li>
+																			</ul>
+																		</li>
+																		<li>Developed Desktop Application in Java using Swing/AWT</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div id="Project" class="container background-image"
+														style="margin-top: 49px;margin-bottom: 0px;height:
+														630px;padding-left:11%;">
+														<div style="padding:0px">
+															<h2
+																style="font-family:Arvo,serif!important;font-size:52px;margin-bottom:0px">Project</h2>
+															<div style="margin-bottom:1.5%"></div>
+															<div
+																style="margin-right:15%;margin-top:5%;font-size:20px;height:40%;text-align:justify;">
+																<ul>
+																	<li>Warehouse management system <span class="pull-right">Jan 17
+																			– April 17</span>
+																		<ul style="font-size:80%">
+																			<li>The project has four modules: Customer, Warehouse
+																				Manager,
+																				Inventory Manager and Admin.</li>
+																			<li>The main aim was to efficiently manage different types of
+																				space for different time periods.</li>
+																			<li>The space management included numbering the space blocks
+																				and assigning contiguous blocks for one customer.</li>
+																			<li>Giving address to the goods for easily retrieving them
+																				and
+																				arranging on different height levels as per weight.</li>
+																		</ul>
+																	</li>
+																	<li>
+																		<div>Hand Written Digit Recognition
+																			<span class="pull-right"><a
+																					href="https://github.com/96sonu/Digit-Recognition">(GitHub
+																					Link)</a></span>
+																		</div>
+																		<ul style="font-size:80%">
+																			<li>A project for recognition of hand written digits.</li>
+																			<li>The dataset used was of MNIST type from Kaggle
+																				Competition. SVM, K-Nearest Neighbor and CNN were used for
+																				this project.</li>
+																			<li>The competition had unlabeled data for which the output
+																				needs to be predicted. Submitted the output on Kaggle and
+																				got
+																				accuracy of 0.99 on unlabeled data.</li>
+																		</ul>
+																	</li>
+																	<li>Image Processing and Text Classification
+																		<ul style="font-size:80%">
+																			<li>A project for categorization of news headlines from news
+																				channel videos. In this project a news clip is broken in
+																				frames using OpenCV and the news lines are read from these
+																				frames using Tesseract-OCR.</li>
+																			<li>This news lines are classified using BBC News Dataset in
+																				five labels using Random Forest Classifier.</li>
+																		</ul>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<script>
+		function openNav() 
 		{
-			document.getElementById("mySidenav").style.width = "250px";
+			if(document.getElementById("mySidenav").style.width == "0px") {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+			else {
+				document.getElementById("mySidenav").style.width = "0px";
+			}
 		}
-		else
+		
+		var i = 0;
+		var txt = 'An enthusiastic Software Developer, budding Data Scientist and self-motivated in learning new technologies in field of Computer Science. Passionate to develop broad skill set through continuous learning and adapting to company standards. I am a Graduate Student at University of Texas at Dallas, pursuing Master\'s in Computer Science. My Specialization Track is Data Science.';
+		var speed = 50;
+
+		function typeWriter() 
 		{
-			document.getElementById("mySidenav").style.width = "0px";
+			if (i < txt.length) 
+			{
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+			}
+		}
+		
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav mobileNav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav mobileNav";
 		}
 	}
-	
-	var i = 0;
-	var txt = 'An enthusiastic Software Developer, budding Data Scientist and self-motivated in learning new technologies in field of Computer Science. Passionate to develop broad skill set through continuous learning and adapting to company standards. I am a Graduate Student at University of Texas at Dallas, pursuing Master\'s in Computer Science. My Specialization Track is Data Science.';
-	var speed = 50;
+		</script>
+											</body>
 
-	function typeWriter() 
-	{
-	  if (i < txt.length) 
-	  {
-		document.getElementById("demo").innerHTML += txt.charAt(i);
-		i++;
-		setTimeout(typeWriter, speed);
-	  }
-	}
-	
-	function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav mobileNav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav mobileNav";
-  }
-}
-	</script>
-
-
-</body>
-
-</html>
+										</html>
